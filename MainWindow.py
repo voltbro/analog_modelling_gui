@@ -1,8 +1,8 @@
 
 import serial.tools.list_ports
 import numpy as np
-from PyQt6.QtWidgets import QDialog, QPushButton, QMessageBox
-from PyQt6.QtGui import QIcon
+from PySide6.QtWidgets import QDialog, QPushButton, QMessageBox
+from PySide6.QtGui import QIcon
 
 from forms.ui_mainwindow import Ui_Dialog
 from vb_plot import Plot

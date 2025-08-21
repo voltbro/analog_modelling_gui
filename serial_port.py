@@ -1,7 +1,7 @@
 import serial
 import time
 import threading
-from PyQt6.QtCore import QObject, pyqtSignal
+from PySide6.QtCore import QObject, Signal
 
 PACKET_LENGTH = 12
 
@@ -10,7 +10,7 @@ class SerialPort(QObject):
     """
     Класс для работы с последовательным портом с помощью PyQt сигналов.
     """
-    data_ready = pyqtSignal(bytes)
+    data_ready = Signal(bytes)
     def __init__(self, port: str = '/dev/ttyACM0', baudrate: int = 500000) -> None:
         super().__init__()
         self.busy = False

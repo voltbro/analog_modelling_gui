@@ -1,7 +1,7 @@
-from PyQt6 import QtWidgets, QtGui
-from PyQt6.QtWidgets import QLabel
-from PyQt6.QtGui import QPixmap
-from PyQt6.QtCore import Qt, pyqtSignal
+from PySide6 import QtWidgets, QtGui
+from PySide6.QtWidgets import QLabel
+from PySide6.QtGui import QPixmap
+from PySide6.QtCore import Qt, Signal#pyqtSignal
 
 
 
@@ -14,7 +14,7 @@ class Plot(QtWidgets.QWidget):
     функцию __init_lines и добавить в нее возможность динамического создания линий и их 
     стилей.
     """
-    mouse_clicked = pyqtSignal(float, float)
+    mouse_clicked = Signal(float, float)
 
     LINE_WIDTH = 2
     AXIS_OFFSET = 5
