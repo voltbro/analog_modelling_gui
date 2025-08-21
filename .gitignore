@@ -1,0 +1,4 @@
+.vscode/
+__pycache__/
+.github/
+forms/__pycache__/
