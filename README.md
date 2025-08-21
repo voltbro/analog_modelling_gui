@@ -33,7 +33,7 @@
     ```bash
     conda install -c conda-forge pyqt6 numpy pyserial
     ```
-2. Запустите приложение:
+- Запустите приложение:
    ```bash
    python main.py
    ```
